@@ -1,0 +1,1 @@
+[15-Mar-2022 11:45:54 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.4.0". You are running 7.3.33. in /home3/pmmsanvp/public_html/shriramfa/vendor/composer/platform_check.php on line 24
