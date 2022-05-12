@@ -8,9 +8,9 @@ class NotificationController extends Controller
 {
 	public static function notify($message,$fire_base_id,$type,$activity = null){
 
-		$admin_server_id = "AAAAbmo6rBM:APA91bHAGrunuuB0Yons_ljuGmrH-JkTkWpyXtlsfKNgo2VO_XL2LAs4oh5P_qEKaIWsjFHiINnhjPxXKHyYrJnPafGW7pzkSdxrpwBNVv329_k_Ocavp-RmQUc2nXafMv5d7gZZToAE";
-		$logistic_manager_server_id = "AAAA_jzY9jY:APA91bFKv3heYrkwCgINFILdG3JUybEWpym_EPaoor1LNE0PvaUX83PjeI1gmZxz0lZ8LdM5TV0GkqEql1_GUU2T2uwJ6pkXSf5cwpWUNIoHn3g0S2S5OyT29zPS00Vf4hj2EdEdEm6P";
-		$marketing_manager_server_id = "AAAAvsoq428:APA91bGK8Ukkg1yThnT3tpBzAAocoZvfTQvgXpQwkH8Crfp46cgaAVE9lFttq4SlOXTkrbNB_8b1md164q7gF5nndJ6e39b0_CvMFbmy3qnZGT9Br5AST3QKEzn8DzZU0zmkFHdSsYsd";
+		$admin_server_id = env('ADMIN_SERVER_ID');
+		$logistic_manager_server_id = env('LOGISTIC_MANAGER_SERVER_ID');
+		$marketing_manager_server_id = env('MARKETING_MANAGER_ID');
 
 		if($type == "admin"){
 			$server_id = $admin_server_id;
